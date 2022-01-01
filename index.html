@@ -41,7 +41,7 @@
         </div>
     </div>
 </div>
-<header>
+<header class="header-sticky">
     <div class="container align-items-center">
         <div class="row space-between">
             <a class="logo col-2" href="#" title="SoftCDKey">
@@ -190,30 +190,50 @@
         <div class="row justify-content-center">
             <div class="categories">
                 <a class="categories__tab categories__tab-1" href="#" title="Windows">
-                    <img src="img/svg/windows.svg" alt="windows icon">
-                    <span class="categories__title">
+                    <img class="categories__tab-image" src="img/svg/microsoft.svg" alt="windows icon">
+                    <h4 class="categories__title">
                         Windows
-                    </span>
+                    </h4>
+                    <img class="categories__tab-image_hover" src="img/svg/microsoft-color.svg" alt="image hover">
                 </a>
                 <a class="categories__tab categories__tab-2" href="#" title="Office">
-                    <img src="img/svg/office.svg" alt="office icon">
-                    <span class="categories__title">
+                    <img class="categories__tab-image" src="img/svg/office.svg" alt="office icon">
+                    <h4 class="categories__title">
                         Office
-                    </span>
+                    </h4>
+                    <img class="categories__tab-image_hover" src="img/svg/office-color.svg" alt="image hover">
                 </a>
                 <a class="categories__tab categories__tab-3" href="#" title="Windows+Office">
-                    <img src="img/svg/windows+office.svg" alt="windows+office icon">
-                    <span class="categories__title">
+                    <img class="categories__tab-image" src="img/svg/windows+office.svg" alt="windows+office icon">
+                    <h4 class="categories__title">
                         Windows
                         <br>
                         Office                    
-                    </span>
+                    </h4>
+                    <div class="categories__tab-hover">
+                        <img class="categories__tab-image" src="img/svg/microsoft-color.svg" alt="windows+office icon">
+                        <h4 class="categories__title">
+                            <span>
+                                +
+                            </span>
+                            <span>
+                                Windows
+                                <br>
+                                Office  
+                            </span>    
+                            <span>
+                                +
+                            </span>              
+                        </h4>
+                        <img class="categories__tab-image" src="img/svg/office-color.svg" alt="image hover">
+                    </div>
                 </a>
                 <a class="categories__tab categories__tab-4" href="#" title="Antiviruses">
-                    <img src="img/svg/antivirus.svg" alt="antiviruses icon">
-                    <span class="categories__title">
+                    <img class="categories__tab-image" src="img/svg/antivirus.svg" alt="antiviruses icon">
+                    <h4 class="categories__title">
                         Антивирусы
-                    </span>
+                    </h4>
+                    <img class="categories__tab-image_hover" src="img/svg/shield-color.svg" alt="image hover">
                 </a>
             </div>
         </div>
@@ -355,8 +375,8 @@
                             <img src="img/w10.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_new">
+                            Новинка
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -368,7 +388,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -390,8 +410,8 @@
                             <img src="img/w10.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_new">
+                            Новинка
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -403,7 +423,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -426,8 +446,8 @@
                             <img src="img/w10.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_new">
+                            Новинка
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -439,7 +459,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -461,7 +481,7 @@
                             <img src="img/o365.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
+                        <div class="product-card__badge product-card__badge_popular">
                             Популярный
                         </div>
                         <div class="product-card__discount">
@@ -474,7 +494,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -496,7 +516,7 @@
                             <img src="img/o365.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
+                        <div class="product-card__badge product-card__badge_popular">
                             Популярный
                         </div>
                         <div class="product-card__discount">
@@ -509,7 +529,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -531,8 +551,8 @@
                             <img src="img/o365.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_hot">
+                            Горячая скидка
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -544,7 +564,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -566,8 +586,8 @@
                             <img src="img/o365.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_hot">
+                            Горячая скидка
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -579,7 +599,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -601,8 +621,8 @@
                             <img src="img/w10.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_hot">
+                            Горячая скидка
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -614,7 +634,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -636,7 +656,7 @@
                             <img src="img/w8.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
+                        <div class="product-card__badge product-card__badge_popular">
                             Популярный
                         </div>
                         <div class="product-card__discount">
@@ -649,7 +669,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -671,8 +691,8 @@
                             <img src="img/w8.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_sale">
+                            Распродажа
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -684,7 +704,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -706,8 +726,8 @@
                             <img src="img/w8.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_sale">
+                            Распродажа
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -719,7 +739,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -741,8 +761,8 @@
                             <img src="img/w10.png" alt="product thumbnail">
                             <h4 class="product-card__title" title="Product Title">Product Title</h4>
                         </div>
-                        <div class="product-card__badge">
-                            Популярный
+                        <div class="product-card__badge product-card__badge_sale">
+                            Распродажа
                         </div>
                         <div class="product-card__discount">
                             -55%
@@ -754,7 +774,7 @@
                     <div class="product-card__bottom">
                         <div class="product-card__cart">
                             <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
-                                Купить
+                                <span>Купить</span>
                             </button>
                             <a href="#" class="quick-purchase" title="Быстрая покупка">
                                 Быстрая покупка
@@ -831,7 +851,12 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial__number">
-                        № 121
+                        <span>
+                            № 121
+                        </span>
+                        <span class="testimonial__number-shadow">
+                            № 121
+                        </span>
                     </div>
                     <div class="testimonial__user">
                         <img src="/img/user_avatar.jpeg" alt="user avatar">
@@ -848,7 +873,12 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial__number">
-                        № 121
+                        <span>
+                            № 121
+                        </span>                        
+                        <span class="testimonial__number-shadow">
+                            № 121
+                        </span>
                     </div>
                     <div class="testimonial__user">
                         <img src="/img/user_avatar.jpeg" alt="user avatar">
@@ -865,7 +895,12 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial__number">
-                        № 121
+                        <span>
+                            № 121
+                        </span>
+                        <span class="testimonial__number-shadow">
+                            № 121
+                        </span>
                     </div>
                     <div class="testimonial__user">
                         <img src="/img/user_avatar.jpeg" alt="user avatar">
@@ -914,10 +949,6 @@
                         Все права защищены 2021
                     </li>
                 </ul>
-                <select class="language-switcher custom-select" name="language" id="">
-                    <option value="ru">Русский</option>
-                    <option value="eng">English</option>
-                </select>
             </div>
             <div class="col-4 d-flex">
                 <div class="col-6">
