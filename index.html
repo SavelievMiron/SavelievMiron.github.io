@@ -43,26 +43,60 @@
 </div>
 <header class="header-sticky">
     <div class="container align-items-center">
-        <div class="row space-between">
+        <div class="row justify-content-between align-items-center">
             <a class="logo col-2" href="#" title="SoftCDKey">
                 <img src="https://via.placeholder.com/150" alt="logo">
             </a>
-            <nav class="nav col-8">
+            <div class="info-menu col-1">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <div class="info-menu__content">
+                    <h4 class="info-menu__heading">
+                        Информация
+                    </h4>
+                    <ul class="info-menu__list">
+                        <li class="info-menu__item">
+                            <a href="" title="Гарантии">
+                                Гарантии
+                            </a>
+                        </li>
+                        <li class="info-menu__item">
+                            <a href="" title="Гарантии">
+                                Оплата
+                            </a>
+                        </li>
+                        <li class="info-menu__item">
+                            <a href="" title="Гарантии">
+                                Скидки и акции
+                            </a>
+                        </li>
+                        <li class="info-menu__item">
+                            <a href="" title="Гарантии">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav col-7" role="navigation">
                 <ul class="nav__items">
                     <li class="nav__item">
-                        <a class="nav__link" href="#" title="#">Главная</a>
+                        <a class="nav__link" href="/" title="Главная">Главная</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#" title="#">Каталог</a>
+                        <a class="nav__link" href="/pages/catalog.html" title="Каталог">Каталог</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#" title="#">О нас</a>
+                        <a class="nav__link" href="#" title="О нас">О нас</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#" title="#">Контакты</a>
+                        <a class="nav__link" href="#" title="Контакты">Контакты</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#" title="#">Отзывы</a>
+                        <a class="nav__link" href="#" title="Контакты">Отзывы</a>
                     </li>
                 </ul>
             </nav>
@@ -421,12 +455,12 @@
             <section id="products">
     <div class="container">
         <div class="row flex-column">
-            <div class="products">
+            <div class="products-grid">
                 <div class="product-card">
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w10.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_new">
                             Новинка
@@ -461,7 +495,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w10.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_new">
                             Новинка
@@ -497,7 +531,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w10.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_new">
                             Новинка
@@ -532,7 +566,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/o365.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_popular">
                             Популярный
@@ -567,7 +601,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/o365.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_popular">
                             Популярный
@@ -602,7 +636,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/o365.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_hot">
                             Горячая скидка
@@ -637,7 +671,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/o365.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_hot">
                             Горячая скидка
@@ -672,7 +706,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w10.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_hot">
                             Горячая скидка
@@ -707,7 +741,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w8.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_popular">
                             Популярный
@@ -742,7 +776,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w8.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_sale">
                             Распродажа
@@ -777,7 +811,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w8.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_sale">
                             Распродажа
@@ -812,7 +846,7 @@
                     <div class="product-card__top">
                         <div class="product-card__content">
                             <img src="img/w10.png" alt="product thumbnail">
-                            <h4 class="product-card__title" title="Product Title">Product Title</h4>
+                            <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
                         </div>
                         <div class="product-card__badge product-card__badge_sale">
                             Распродажа
@@ -846,7 +880,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <a class="btn btn-large btn-primary btn-shadow" href="#" title="В каталог">
+            <a class="btn btn-large btn-primary btn-shadow" href="/pages/catalog.html" title="В каталог">
                 В каталог
             </a>
         </div>
