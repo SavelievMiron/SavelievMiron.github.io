@@ -26,22 +26,22 @@
         <link rel="stylesheet" href="styles/main.min.css">
     </head>
     <body>
-        <div class="topbar-panel">
-    <div class="container">
-        <div class="row">
-            <div class="topbar-panel__info">
-        
-            </div>
-            <div class="topbar-panel__contacts">
-        
-            </div>
-            <div class="topbar-panel__cabinet">
-        
+        <header class="header-sticky">
+    <div class="topbar-panel">
+        <div class="container">
+            <div class="row">
+                <div class="topbar-panel__info">
+            
+                </div>
+                <div class="topbar-panel__contacts">
+            
+                </div>
+                <div class="topbar-panel__cabinet">
+            
+                </div>
             </div>
         </div>
     </div>
-</div>
-<header class="header-sticky">
     <div class="container align-items-center">
         <div class="row justify-content-between align-items-center">
             <a class="logo col-2" href="#" title="SoftCDKey">
@@ -101,9 +101,63 @@
                 </ul>
             </nav>
             <div class="header-widgets col-2">
-                <button class="btn" title="Авторизация">
+                <button class="btn user-auth" title="Авторизация">
                     Авторизация
                 </button>
+                <div class="cart-dropdown" id="shopping-cart">
+                    <button class="cart-dropdown__basket">
+                        <div class="cart-dropdown__basket-icon">
+                            <img src="/img/svg/basket-white.svg" alt="shopping bag">
+                            <span class="cart-dropdown__amount">0</span>
+                        </div>
+                        <div class="cart-dropdown__basket-inner">
+                            Корзина
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </button>
+                    <div class="cart-dropdown__menu hide">
+                        <ul id="dropdown-products" class="cart-dropdown__products">
+                            <li class="dropdown-product">
+                                <div class="dropdown-product__image">
+                                    <img src="https://via.placeholder.com/150" alt="product image">
+                                </div>
+                                <div class="dropdown-product__desc">
+                                    <h4 class="dropdown-product__desc-title">
+                                        <a href="#" target="_blank">Product Title</a>
+                                    </h4>
+                                    <span class="dropdown-product__desc-subtitle">
+                                        Ключ активации
+                                    </span>
+                                </div>
+                                <div class="dropdown-product__cost">
+                                    <span class="dropdown-product__quantity">
+                                        x2
+                                    </span>
+                                    <span class="dropdown-product__price">
+                                        999 P
+                                    </span>
+                                </div>
+                                <button class="dropdown-product__remove" title="Удалить из Корзины">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="cart-dropdown__hide">
+                            <div class="cart-dropdown__total">
+                                <span>Сумма</span>
+                                <span class="cart-total-price">999 Р</span>            
+                            </div>
+                            <div class="cart-dropdown__action">
+                                <button id="clearCart" type="button" title="Очистить корзину">
+                                    Очистить корзину
+                                </button>
+                                <a href="#" class="cart-dropdown__action-pay" title="Оплатить">
+                                    Оплатить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <select class="language-switcher custom-select" name="language" id="">
                     <option value="ru">Русский</option>
                     <option value="eng">English</option>
