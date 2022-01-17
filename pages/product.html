@@ -24,8 +24,7 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" type="text/css" href="/styles/base.min.css">
-        <link rel="stylesheet" type="text/css" href="/styles/product.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/main.min.css">
     </head>
     <body>
         <header class="header-sticky">
@@ -169,7 +168,8 @@
     </div>
 </header>
         <main>
-            <section id="product-info">
+            <div class="single-product">
+                <section id="product-info">
     <div class="container">
         <div class="row">
             <div class="col-3 p-0">
@@ -287,8 +287,8 @@
         </div>
     </div>
 </section>
-            <hr class="section-break">
-            <section id="faq">
+                <hr class="section-break">
+                <section id="product-faq">
     <div class="container">
         <div class="row">
             <div class="faq">
@@ -324,33 +324,33 @@
         </div>
     </div>
 </section>
-            <section id="testimonials">
+                <section id="product-testimonials">
     <div class="container">
         <div class="row">
-            <div class="testimonials">
-                <div class="testimonials__header">
-                    <div class="testimonials__header-left">
+            <div class="product-testimonials">
+                <div class="product-testimonials__header">
+                    <div class="product-testimonials__header-left">
                         <h3>
                             Отзывы
                         </h3>
                     </div>
-                    <div class="testimonials__header-right">
+                    <div class="product-testimonials__header-right">
                         <h3>
                             На других сервисах
                         </h3>
-                        <a class="testimonials__service" href="#" title="Яндекс.Маркет">
+                        <a class="product-testimonials__service" href="#" title="Яндекс.Маркет">
                             Яндекс.Маркет
                         </a>
-                        <a class="testimonials__service" href="#" title="Trustpilot">
+                        <a class="product-testimonials__service" href="#" title="Trustpilot">
                             Trustpilot
                         </a>
-                        <a class="testimonials__service" href="#" title="Отзовник">
+                        <a class="product-testimonials__service" href="#" title="Отзовник">
                             Отзовник
                         </a>
                     </div>
                 </div>
-                <div class="testimonials__wrapper">
-                    <div class="testimonials__slider swiper">
+                <div class="product-testimonials__wrapper">
+                    <div class="product-testimonials__slider swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide testimonial">
                                 <div class="testimonial__top">
@@ -456,15 +456,15 @@
                           <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <a class="testimonials__link" href="#" title="Смотреть все отзывы">
+                <a class="product-testimonials__link" href="#" title="Смотреть все отзывы">
                     Смотреть все отзывы
                 </a>
             </div>
         </div>
     </div>
 </section>
-            <hr class="section-break">
-            <section id="similar-products">
+                <hr class="section-break">
+                <section id="similar-products">
     <div class="container">
         <div class="row">
             <div class="similar-products">
@@ -582,6 +582,7 @@
         </div>
     </div>
 </section>
+            </div>
         </main>
         <footer>
     <div class="container">
@@ -763,7 +764,7 @@
         </div>
     </div>
 </footer>
-        <script src="/js/product.min.js"></script>
+        <script src="/js/main.min.js"></script>
         <script src="/js/vendor.min.js"></script>
     </body>
 </html>
