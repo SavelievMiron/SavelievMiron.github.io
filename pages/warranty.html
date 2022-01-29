@@ -48,12 +48,19 @@
             </div>
         </div>
     </div>
-    <div class="container align-items-center">
-        <div class="row justify-content-between align-items-center">
-            <a class="logo col-2" href="#" title="SoftCDKey">
-                <img src="https://via.placeholder.com/150" alt="logo">
-            </a>
-            <div class="info-menu col-1">
+    <div class="header container align-items-center">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="mobile-menu hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="logo">
+                <a class="logo" href="#" title="SoftCDKey">
+                    <img src="https://via.placeholder.com/150" alt="logo">
+                </a>
+            </div>
+            <div class="info-menu">
                 <div class="hamburger">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -87,7 +94,7 @@
                     </ul>
                 </div>
             </div>
-            <nav class="nav col-7" role="navigation">
+            <nav class="nav" role="navigation">
                 <ul class="nav__items">
                     <li class="nav__item">
                         <a class="nav__link" href="/" title="Главная">Главная</a>
@@ -106,7 +113,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header-widgets col-2">
+            <div class="header-widgets">
                 <button class="btn user-auth" title="Авторизация">
                     Авторизация
                 </button>
@@ -117,7 +124,7 @@
                             <span class="cart-dropdown__amount">3</span>
                         </div>
                         <div class="cart-dropdown__basket-inner">
-                            Корзина
+                            <!-- Корзина -->
                             <i class="fas fa-angle-down"></i>
                         </div>
                     </button>
@@ -242,6 +249,36 @@
                 </select>
             </div>
         </div>
+    </div>
+    <div class="mobile-sidebar">
+        <div class="mobile-nav">
+            <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="/" title="Главная">Главная</a>
+            </div>
+            <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="/pages/catalog.html" title="Каталог">Каталог</a>
+            </div>
+            <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="/pages/about-us.html" title="О нас">О нас</a>
+            </div>
+            <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="/pages/contact.html" title="Контакты">Контакты</a>
+            </div>
+            <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="/pages/testimonials.html" title="Отзывы">Отзывы</a>
+            </div>
+        </div>
+        <button class="btn user-auth" title="Авторизация">
+            Авторизация
+        </button>
+        <!-- <div class="mobile-language-switcher">
+            <label for="language-ru">
+                <input type="radio" name="language" value="ru" id="language-eng">
+            </label>
+            <label for="language-eng">
+                <input type="radio" name="language" value="eng" id="language-eng">
+            </label>
+        </div> -->
     </div>
 </header>
         <main>
@@ -447,7 +484,7 @@
 </div>
     <div class="container">
         <div class="row footer__top">
-            <div class="col-2">
+            <div class="site-info-col col-2">
                 <a class="logo" href="#" title="SoftCDKey">
                     <img src="https://via.placeholder.com/150" alt="logo">
                 </a>
@@ -466,12 +503,44 @@
                             <i class="far fa-envelope"></i>&nbsp;gamebis@gmail.com
                         </a>
                     </li>
-                    <li class="company-info__item">
+                    <li class="company-info__item copyright">
                         Все права защищены 2021
                     </li>
                 </ul>
+                <ul class="social-links mobile">
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-skype"></i>                            
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-4 d-flex">
+            <div class="links-col col-4 d-flex">
                 <div class="col-6">
                     <h3 class="heading">Линки</h3>
                     <ul class="links">
@@ -486,6 +555,18 @@
                         </li>
                         <li class="links__item">
                             <a href="/pages/testimonials.html" title="">Отзывы</a>
+                        </li>
+                        <li class="links__item mobile">
+                            <a href="/pages/campaigns.html" title="#">Скидки и акции</a>
+                        </li>
+                        <li class="links__item mobile">
+                            <a href="/pages/faq.html" title="#">FAQ</a>
+                        </li>
+                        <li class="links__item mobile">
+                            <a href="/pages/warranty.html" title="#">Гарантии</a>
+                        </li>
+                        <li class="links__item mobile">
+                            <a href="/pages/payment.html" title="#">Оплата</a>
                         </li>
                     </ul>
                 </div>
@@ -509,7 +590,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-3 d-flex flex-column">
+            <div class="payments-col col-3 d-flex flex-column">
                 <h3 class="heading">
                     Способы оплаты
                 </h3>
@@ -541,29 +622,33 @@
                 </ul>
                 <a class="d-block underline mt-auto" href="#" title="#">Нет нужной платёжной системы?</a>
             </div>
-            <div class="col-3 d-flex flex-column">
+            <div class="rating-col col-3 d-flex flex-column">
                 <h3 class="heading">
                     Рейтинг SoftCDKey
                 </h3>
                 <a href="#" class="rating-box rating-box__yandex">
-                    <div class="rating-box__icon">
-                        <img src="/img/svg/yandex_icon.svg" alt="yandex logo">
-                    </div>
-                    <div class="rating-box__content">
-                        <h5 class="rating-box__title">Яндекс Маркет</h5>
-                        <span class="rating-box__subtitle">Рейтинг магазина</span> 
+                    <div class="rating-box__wrapper">
+                        <div class="rating-box__icon">
+                            <img src="/img/svg/yandex_icon.svg" alt="yandex logo">
+                        </div>
+                        <div class="rating-box__content">
+                            <h5 class="rating-box__title">Яндекс Маркет</h5>
+                            <span class="rating-box__subtitle">Рейтинг магазина</span> 
+                        </div>
                     </div>
                     <div class="rating-box__score">
                         589
                     </div>
                 </a>
                 <a href="#" class="rating-box rating-box__trustpilot">
-                    <div class="rating-box__icon">
-                        <img src="/img/svg/trustpilot_icon.svg" alt="trustpilot logo">
-                    </div>
-                    <div class="rating-box__content">
-                        <h5 class="rating-box__title">Trustpilot</h5>
-                        <span class="rating-box__subtitle">Рейтинг магазина</span> 
+                    <div class="rating-box__wrapper">
+                        <div class="rating-box__icon">
+                            <img src="/img/svg/trustpilot_icon.svg" alt="trustpilot logo">
+                        </div>
+                        <div class="rating-box__content">
+                            <h5 class="rating-box__title">Trustpilot</h5>
+                            <span class="rating-box__subtitle">Рейтинг магазина</span> 
+                        </div>
                     </div>
                     <div class="rating-box__score">
                         <span class="rating-box__trustpilot-star"></span>
@@ -572,9 +657,147 @@
                         <span class="rating-box__trustpilot-star"></span>
                         <span class="rating-box__trustpilot-star"></span>
                     </div>
+                    <spn class="rating-box__score-num">5.0</spn>
                 </a>
                 <a class="d-block underline mt-auto" href="#" title="#">Все отзывы и рейтинги</a>
             </div>
+            <div class="mobile-social-media">
+                <h3 class="heading">
+                    Мы в социальных сетях
+                </h3>
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-skype"></i>                            
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a class="social-links__link" href="#" title="#">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mobile-payment-methods">
+            <ul class="payment-methods">
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+                <li class="payment-methods__item">
+                    <img src="https://via.placeholder.com/45" alt="payment method">
+                </li>
+            </ul>
+        </div>
+        <div class="row mobile-social-media">
+            <ul class="social-links">
+                <li class="social-links__item">
+                    <a class="social-links__link" href="#" title="#">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="#" title="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="#" title="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="#" title="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="#" title="#">
+                        <i class="fab fa-skype"></i>                            
+                    </a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="#" title="#">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="row mobile-rating">
+            <div class="mobile-rating__wrapper">
+                <a href="#" class="rating-box rating-box__yandex">
+                    <div class="rating-box__wrapper">
+                        <div class="rating-box__icon">
+                            <img src="/img/svg/yandex_icon.svg" alt="yandex logo">
+                        </div>
+                        <div class="rating-box__content">
+                            <h5 class="rating-box__title">Яндекс Маркет</h5>
+                            <span class="rating-box__subtitle">Рейтинг магазина</span> 
+                        </div>
+                    </div>
+                    <div class="rating-box__score">
+                        589
+                    </div>
+                </a>
+                <a href="#" class="rating-box rating-box__trustpilot">
+                    <div class="rating-box__wrapper">
+                        <div class="rating-box__icon">
+                            <img src="/img/svg/trustpilot_icon.svg" alt="trustpilot logo">
+                        </div>
+                        <div class="rating-box__content">
+                            <h5 class="rating-box__title">Trustpilot</h5>
+                            <span class="rating-box__subtitle">Рейтинг магазина</span> 
+                        </div>
+                    </div>
+                    <div class="rating-box__score">
+                        <span class="rating-box__trustpilot-star"></span>
+                        <span class="rating-box__trustpilot-star"></span>
+                        <span class="rating-box__trustpilot-star"></span>
+                        <span class="rating-box__trustpilot-star"></span>
+                        <span class="rating-box__trustpilot-star"></span>
+                    </div>
+                    <spn class="rating-box__score-num">5.0</spn>
+                </a>
+            </div>
+            <a class="all-reviews d-block underline" href="#" title="#">Все отзывы и рейтинги</a>
         </div>
     </div>
     <div class="footer__bottom">
