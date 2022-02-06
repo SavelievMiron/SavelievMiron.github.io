@@ -402,6 +402,10 @@
 </aside>
                     <div class="products flex-column">
     <form action="" class="search-form">
+        <button type="button" class="btn btn-outlined btn-filters" title="Фильтры">
+            <i class="fas fa-sliders-h"></i>
+            Фильтры
+        </button>
         <div class="search__field">
             <input type="text" name="search" id="search" placeholder="Введите название товара...">
         </div>
@@ -837,9 +841,215 @@
             </div>
         </div>
     </div>
+    <div class="mobile-filters">
+    <div class="categories">
+        <button class="categories__heading">
+            Windows
+        </button>
+        <div class="categories__box categories__box_windows">
+            <button class="categories__item">Windows 11</button>
+            <button class="categories__item">Windows 10</button>
+            <button class="categories__item">Windows 8</button>
+            <button class="categories__item">Windows 7</button>
+        </div>
+        <button class="categories__heading">
+            Office
+        </button>
+        <div class="categories__box categories__box_office">
+            <button class="categories__item">Office 2021</button>
+            <button class="categories__item">Office 2020</button>
+            <button class="categories__item">Office 2019</button>
+            <button class="categories__item">Office 2018</button>
+        </div>
+        <button class="categories__heading">
+            Antiviruses
+        </button>
+        <div class="categories__box categories__box_antiviruses">
+            <button class="categories__item">Kasperskiy</button>
+            <button class="categories__item">Avast</button>
+            <button class="categories__item">Avira</button>
+        </div>
+    </div>
+    <div class="filters__box">
+        <div class="filters__tags">
+            <div class="filters__tags-panel">
+                <label class="custom-checkbox" for="popular">
+                    <input type="checkbox" name="popular" id="popular">    
+                    <span class="checkmark"></span>
+                    Популярные
+                </label>
+                <label class="custom-checkbox" for="new">
+                    <input type="checkbox" name="new" id="new">
+                    <span class="checkmark"></span>                  
+                    Новинки
+                </label>
+                <label class="custom-checkbox" for="hot_discount">
+                    <input type="checkbox" name="hot_discount" id="hot_discount">
+                    <span class="checkmark"></span>
+                    Горячые скидки
+                </label>
+                <label class="custom-checkbox" for="sell">
+                    <input type="checkbox" name="sell" id="sell">
+                    <span class="checkmark"></span>
+                    Распродажа
+                </label>
+            </div>
+        </div>
+    </div>
+    <button class="mobile-filters__close btn btn-primary" title="Закрыть">
+        Закрыть
+    </button>
+</div>
     <nav id="pagination" class="pagination" role="navigation" aria-label="products pagination">
    
 </nav>
+    <div class="popular-products">
+        <h3 class="popular-products__heading">
+            Популярные товары
+        </h3>
+        <div class="popular-products__content products-grid">
+            <div class="product-card">
+                <div class="product-card__top">
+                    <div class="product-card__content">
+                        <img src="img/w10.png" alt="product thumbnail">
+                        <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
+                    </div>
+                    <div class="product-card__badge product-card__badge_new">
+                        Новинка
+                    </div>
+                    <div class="product-card__discount">
+                        -55%
+                    </div>
+                    <button class="favourites favourites__add" title="Добавить в Избранное">
+                    </button>
+                </div>
+                <hr>
+                <div class="product-card__bottom">
+                    <div class="product-card__cart">
+                        <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
+                            <span>Купить</span>
+                        </button>
+                        <a href="#" class="quick-purchase" title="Быстрая покупка">
+                            Быстрая покупка
+                        </a>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__sale-price">
+                            999 Р
+                        </span>
+                        <del class="product-card__original-price">
+                            1999 Р
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__top">
+                    <div class="product-card__content">
+                        <img src="img/w10.png" alt="product thumbnail">
+                        <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
+                    </div>
+                    <div class="product-card__badge product-card__badge_new">
+                        Новинка
+                    </div>
+                    <div class="product-card__discount">
+                        -55%
+                    </div>
+                    <button class="favourites favourites__add" title="Добавить в Избранное">
+                    </button>
+                </div>
+                <hr>
+                <div class="product-card__bottom">
+                    <div class="product-card__cart">
+                        <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
+                            <span>Купить</span>
+                        </button>
+                        <a href="#" class="quick-purchase" title="Быстрая покупка">
+                            Быстрая покупка
+                        </a>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__sale-price">
+                            999 Р
+                        </span>
+                        <del class="product-card__original-price">
+                            1999 Р
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__top">
+                    <div class="product-card__content">
+                        <img src="img/w10.png" alt="product thumbnail">
+                        <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
+                    </div>
+                    <div class="product-card__badge product-card__badge_new">
+                        Новинка
+                    </div>
+                    <div class="product-card__discount">
+                        -55%
+                    </div>
+                    <button class="favourites favourites__add" title="Добавить в Избранное">
+                    </button>
+                </div>
+                <hr>
+                <div class="product-card__bottom">
+                    <div class="product-card__cart">
+                        <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
+                            <span>Купить</span>
+                        </button>
+                        <a href="#" class="quick-purchase" title="Быстрая покупка">
+                            Быстрая покупка
+                        </a>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__sale-price">
+                            999 Р
+                        </span>
+                        <del class="product-card__original-price">
+                            1999 Р
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card__top">
+                    <div class="product-card__content">
+                        <img src="img/w10.png" alt="product thumbnail">
+                        <h4 class="product-card__title" title="Product Title"><a href="#" title="Product Title">Product Title</a></h4>
+                    </div>
+                    <div class="product-card__badge product-card__badge_new">
+                        Новинка
+                    </div>
+                    <div class="product-card__discount">
+                        -55%
+                    </div>
+                    <button class="favourites favourites__add" title="Добавить в Избранное">
+                    </button>
+                </div>
+                <hr>
+                <div class="product-card__bottom">
+                    <div class="product-card__cart">
+                        <button class="btn btn-outlined add-to-cart" title="Добавить в Корзину">
+                            <span>Купить</span>
+                        </button>
+                        <a href="#" class="quick-purchase" title="Быстрая покупка">
+                            Быстрая покупка
+                        </a>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__sale-price">
+                            999 Р
+                        </span>
+                        <del class="product-card__original-price">
+                            1999 Р
+                        </del>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
                 </div>
             </div>
@@ -887,9 +1097,6 @@
             <h2>Регистрация</h2>
         </div>
         <div class="modal__content">
-            <div class="form-field">
-                <input type="text" class="input-field" name="username" placeholder="Никнейм">
-            </div>
             <div class="form-field">
                 <input type="email" class="input-field" name="email" placeholder="Эл.почта">
             </div>

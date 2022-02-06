@@ -292,7 +292,6 @@
                         <img class="profile__user-photo" src="/img/user.jpg" alt="profile picture">
                     </div>
                     <div class="profile-sidebar__info--right">
-                        <span>Thomas Jefferson</span>
                         <span>example@example.com</span>
                     </div>
                 </div>
@@ -325,6 +324,13 @@
                         Тикеты
                         <span class="profile-sidebar__tab--number">3</span>
                     </button>
+                    <button class="profile-sidebar__tab" data-tab="favourites" title="Избранное">
+                        <span class="profile-sidebar__tab--icon">
+                            <i class="fas fa-heart"></i>
+                        </span> 
+                        Избранное
+                        <span class="profile-sidebar__tab--number">2</span>
+                    </button>
                     <button class="profile-sidebar__tab" data-tab="settings" title="Настройки">
                         <span class="profile-sidebar__tab--icon">
                             <i class="fas fa-cog"></i>
@@ -349,6 +355,11 @@
                         </button>
                         <button class="profile-panel__tab" data-panel_tab="testimonials_history" title="История отзывов">
                             История отзывов
+                        </button>
+                    </div>
+                    <div class="profile-panel__tabs" data-panel="favourites">
+                        <button class="profile-panel__tab is-active" data-panel_tab="favourites" title="Тикеты">
+                            Тикеты
                         </button>
                     </div>
                     <div class="profile-panel__tabs" data-panel="tickets">
@@ -570,9 +581,6 @@
             <h2>Регистрация</h2>
         </div>
         <div class="modal__content">
-            <div class="form-field">
-                <input type="text" class="input-field" name="username" placeholder="Никнейм">
-            </div>
             <div class="form-field">
                 <input type="email" class="input-field" name="email" placeholder="Эл.почта">
             </div>
