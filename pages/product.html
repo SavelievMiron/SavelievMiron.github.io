@@ -284,7 +284,7 @@
         <main>
             <div class="single-product">
                 <section id="product-info">
-    <div class="container">
+    <div class="desktop-product container">
         <div class="product__header row">
             <div class="product__title">
                 <h1>
@@ -525,22 +525,169 @@
             </div>
         </div>
     </div>
+    <div class="mobile-product container">
+        <div class="row">
+            <div class="mobile-product__header">
+                <div class="mobile-product__heading">
+                    <h2>
+                        Windows 11
+                    </h2>
+                    <p>
+                        Professional
+                    </p>
+                </div>
+                <div class="mobile-product__shortinfo">
+                    <div class="product__rating">
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>                        
+                        <i class="icon icon-star-empty"></i>
+                        <span class="product__rating-users">
+                            99
+                        </span>
+                    </div>
+                    <div class="product__reviews">
+                        <div class="product__reviews-good">
+                            <i class="far fa-thumbs-up"></i>
+                            140
+                        </div>
+                        <div class="product__reviews-bad">
+                            <i class="far fa-thumbs-down"></i>
+                            10
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-product__slider container">
+                <div class="mobile-product__slider--1 swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                        </div>
+                    </div>
+                    <div class="mobile-product__slider--1_back">
+                    </div>
+                </div>
+                <div class="mobile-product__slider--2__wrapper">
+                    <div class="mobile-product__slider--2 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/200x150" alt="product thumb">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="mobile-product__cart">
+                <div class="mobile-product__cart-info">
+                    <span class="product__stock product__stock--in">
+                        В наличии
+                    </span>
+                    <div class="product__price">
+                        <span class="product__price--sale">
+                            999 Р
+                        </span>
+                        <del class="product__price--original">
+                            1999 Р
+                        </del>
+                    </div>
+                </div>
+                <div class="mobile-product__cart-add">
+                    <div class="mobile-product__add-to-cart">
+                        <div class="product__add-to-cart--quantity">
+                            <button id="minus" title="Удалить">&minus;</button>
+                            <input id="quantity" type="number" name="quantity" value="1" min="1" max="100">
+                            <button id="plus" title="Добавить">&plus;</button>
+                        </div>
+                        <button class="product__add-to-cart--btn" title="Добавить в корзину">
+                            <span>В корзину</span>
+                        </button>
+                    </div>
+                    <button class="product__quick-purchase" title="Купить в 1 клик">
+                        Купить в 1 клик
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-product__assets">
+                <button title="Скачать програму">
+                    <i class="icon icon-download"></i>
+                    Скачать програму
+                </button>
+                <button title="Инструкция">
+                    <i class="icon icon-document"></i>
+                    Инструкция
+                </button>
+            </div>
+            <div class="mobile-product__features">
+                <h2 class="mobile-product__features--heading">
+                    Характеристики
+                </h2>
+                <ul>
+                    <li>
+                        <span>
+                            Тип поставки
+                        </span>
+                        <span>
+                            Электронный ключ
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Версия
+                        </span>
+                        <span>
+                            Windows 10
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Редакция
+                        </span>
+                        <span>
+                            Home
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
                 <section id="product-description">
     <div class="product-desc__tabs">
         <div class="container">
             <div class="row">
                 <button class="product-desc__tab is-active" data-id="description" title="Описание">
-                    <span>Описание</span>
+                    Описание
                 </button>
                 <button class="product-desc__tab" data-id="characteristics" title="Характеристики">
-                    <span>Характеристики</span>
+                    Характеристики
                 </button>
                 <button class="product-desc__tab" data-id="testimonials" title="Отзывы">
-                    <span>Отзывы</span>
+                    Отзывы
                 </button>
                 <button class="product-desc__tab" data-id="faq" title="F.A.Q">
-                    <span>F.A.Q</span>
+                    F.A.Q
                 </button>
                 <!-- <button class="product-desc__tab" data-id="warranty" title="Гарантии">
                     Гарантии
