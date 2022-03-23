@@ -1,0 +1,32 @@
+@import "main/main";
+
+@import "catalog/catalog";
+
+@import "product/product";
+
+@import "profile/profile";
+
+@import "about/about";
+
+@import "contact/contact";
+
+@import "campaign/archive/archive";
+@import "campaign/single/single";
+
+@import "faq/faq";
+
+@import "payment/payment";
+
+@import "testimonials/testimonials";
+
+@import "thankyou/thankyou";
+
+@import "warranty/warranty";
+
+/* general-purpose */
+@import "components/search";
+@import "components/product-card";
+@import "components/about-banner/about-banner";
+@import "components/pagination/pagination";
+@import "components/faq";
+@import "modals/modals";

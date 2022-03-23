@@ -1,0 +1,14 @@
+.search-form {
+    margin-bottom: 75px;
+
+    .search {
+        &__field {
+            width: calc(80% - 20px);
+            min-width: 576px;
+        }
+        &__category {
+            width: 20%;
+            margin-left: 20px;
+        }
+    }
+}

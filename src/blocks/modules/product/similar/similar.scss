@@ -1,0 +1,25 @@
+section#similar-products {
+    padding: 40px 0 40px 0;
+}
+
+.similar-products {
+    width: 100%;
+    margin-bottom: 40px;
+
+    &__heading {
+        color: grey;
+        font-size: 28px;
+        font-weight: 700;        
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .product-card {
+        min-width: 375px;
+    }
+}

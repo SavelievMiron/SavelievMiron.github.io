@@ -1,0 +1,43 @@
+.about-banner {
+
+    .swiper-wrapper {
+        height: 270px;
+    }
+
+    .swiper-slide {
+        width: 100% !important;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-navigation {
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 50px;
+    }
+    
+    .swiper-nav-btn {
+        position: static;
+        transform: none;
+        margin: 0 10px;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        color: grey;
+        background: #E5E6E8;
+        opacity: 1;
+    }
+
+    .swiper-nav-btn::after {
+        font-size: 16px;
+    }
+}
