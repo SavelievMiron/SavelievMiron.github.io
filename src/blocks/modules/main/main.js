@@ -6,19 +6,18 @@ if (document.querySelector('.main-slider') !== null) {
   const mainSLider = new Swiper(".main-slider", {
     loop: true,
     speed: 800,
+    spaceBetween: 50,
     autoplay: {
       delay: 10000,
     },
-    centeredSlides: true,
-    slidesPerView: 1,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     keyboard: {
       enabled: true,
       onlyInViewport: false,
-    }
+    },
   });
 
   mainSLider.on('slideChange', function () {

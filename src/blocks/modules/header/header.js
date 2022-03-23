@@ -14,13 +14,13 @@ if (typeof header !== 'undefined') {
     isOpenClass: 'is-open'
   });
 
-  window.onscroll = () => {
+  /* window.onscroll = () => {
     if (window.scrollY > (header.offsetTop + 30)) {
       header.classList.add('hide-topbar');
     } else {
       header.classList.remove('hide-topbar');
     }
-  }
+  } */
 
   const mobileMenu = document.querySelector('header .mobile-menu'),
   mobileSidebar = document.querySelector('header .mobile-sidebar');
