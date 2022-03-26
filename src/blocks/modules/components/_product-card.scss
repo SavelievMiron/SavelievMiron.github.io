@@ -12,8 +12,8 @@
     align-items: stretch;
 
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        transform: translateY(-6px);
+        box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.8);
     }
 
     &__top {
@@ -149,8 +149,6 @@
         }
     }
 
-
-
     &__bottom {
         display: flex;
         background: url("/img/triangle.png") no-repeat right center / 120px 100%;
@@ -241,6 +239,9 @@
         line-height: 28px;
         color: #464a58;
         white-space: nowrap;
+        @include laptop {
+            font-size: 30px;
+        }
     }
 
     &__original-price {
@@ -250,6 +251,10 @@
         white-space: nowrap;
         width: 100%;
         text-align: right;
+
+        @include laptop {
+            font-size: 30px;
+        }
     }
 
     &__sale-price + &__original-price {

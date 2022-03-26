@@ -96,6 +96,11 @@ button {
 .btn-shadow {
     box-shadow: 9px 16px 18px rgba(128, 143, 189, 0.38);
     backdrop-filter: blur(13px);
+    transition: 300ms ease;
+
+    &:hover{
+        box-shadow: none;
+    }
 }
 
 .btn-outline {

@@ -4,11 +4,13 @@ if (btnMobileFilters !== null) {
     btnMobileFilters.addEventListener('click', function () {
         const mobileFilters = document.querySelector('.mobile-filters');
         mobileFilters.classList.toggle('show');
+        document.querySelector("body").classList.add("lock");
     });
 }
 if (btnMobileFiltersClose !== null) {
     btnMobileFiltersClose.addEventListener('click', function () {
         const mobileFilters = document.querySelector('.mobile-filters');
         mobileFilters.classList.toggle('show');
+        document.querySelector("body").classList.remove("lock");
     });
 }

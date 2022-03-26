@@ -20,7 +20,7 @@
         justify-content: flex-end;
         padding: 0 50px;
 
-        @include mobile{
+        @include netbook{
             bottom: -20px;
             justify-content: center;
         }
@@ -37,7 +37,7 @@
         background: #e5e6e8;
         opacity: 1;
 
-        @include mobile{
+        @include netbook{
             width: 30px;
             height: 30px;
         }
@@ -45,7 +45,7 @@
 
     .swiper-nav-btn::after {
         font-size: 16px;
-        @include mobile{
+        @include netbook{
             font-size: 14px;
         }
     }
@@ -55,7 +55,7 @@
     &__item {
         background: #464a58;
         padding: 60px 0 60px 40px;
-        @include mobile {
+        @include netbook {
             padding: 30px 30px 30px 15px;
         }
 
@@ -64,7 +64,7 @@
             font-size: 36px;
             font-weight: 900;
 
-            @include mobile {
+            @include netbook {
                 display: none;
             }
         }
@@ -72,7 +72,7 @@
             color: white;
             font-size: 14px;
             font-weight: 300;
-            @include mobile {
+            @include netbook {
                 display: none;
             }
         }
@@ -82,11 +82,16 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
-            font-size: 90px;
+            font-size: 80px;
             font-weight: 900;
             line-height: 1;
             margin-top: 20px;
-            @include mobile {
+
+            @include laptop{
+                font-size: 60px;
+            }
+
+            @include netbook {
                 font-size: 40px;
                 text-align: center;
                 margin: 0;
@@ -95,7 +100,7 @@
             }
         }
         &-img {
-            @include mobile{
+            @include netbook{
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);

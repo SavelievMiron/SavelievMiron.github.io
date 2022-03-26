@@ -2,17 +2,23 @@ section#products {
     margin: 70px 0;
 }
 
-.products-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+.products-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 0% 2.7%;
     .product-card {
-        width: 23%;
         margin-bottom: 30px;
+    }
+    @include netbook {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-        @include mobile{
-            width: 100%;
-        }
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
     }
 }

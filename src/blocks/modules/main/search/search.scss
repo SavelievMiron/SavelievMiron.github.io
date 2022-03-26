@@ -1,7 +1,10 @@
-
 .search {
     &__field {
         width: 70%;
+
+        @include netbook {
+            width: 62%;
+        }
         @include mobile {
             width: 100%;
             margin-bottom: 20px;
@@ -10,8 +13,12 @@
 
     &__category {
         width: 28%;
+        @include netbook {
+            width: 35%;
+        }
         @include mobile {
             width: 100%;
+            display: none;
         }
     }
 }
