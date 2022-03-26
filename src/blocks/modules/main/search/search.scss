@@ -1,14 +1,17 @@
-.search-form {
-    margin-bottom: 75px;
 
-    .search {
-        &__field {
-            width: calc(80% - 20px);
-            min-width: 576px;
+.search {
+    &__field {
+        width: 70%;
+        @include mobile {
+            width: 100%;
+            margin-bottom: 20px;
         }
-        &__category {
-            width: 20%;
-            margin-left: 20px;
+    }
+
+    &__category {
+        width: 28%;
+        @include mobile {
+            width: 100%;
         }
     }
 }

@@ -2,18 +2,17 @@ section#products {
     margin: 70px 0;
 }
 
-.products-grid {
-    grid-template-columns: repeat(4, calc(25% - 2%));
-    gap: 80px calc(2% + 9px);
+.products-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     .product-card {
-        &__cart {
-            .add-to-cart {
-                width: 150px;
-            }
-            .quick-purchase {
-                font-size: 14px;
-            }
+        width: 23%;
+        margin-bottom: 30px;
+
+        @include mobile{
+            width: 100%;
         }
     }
 }

@@ -45,21 +45,7 @@
     }
 }
 
-@media (min-width: 993px) {
-    .products {
-        .popular-products {
-            display: none;
-        }
-    }
-}
 
-@media (min-width: 993px) {
-    .search-form {
-        .btn-filters {
-            display: none;
-        }
-    }
-}
 
 .products-grid {
     grid-template-columns: repeat(3, 30%);

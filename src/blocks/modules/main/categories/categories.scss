@@ -2,22 +2,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    margin: 75px 0;
+    margin: 50px 0;
+
+    @include mobile{
+        margin: 40px 0 20px;
+    }
+
+   
 
     &__tab {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 120px;
-        width: calc(25% - 30px);
-        min-width: 175px;
-        max-width: 300px;
+        width: 23%;
         background: white;
         border: 0;
         border-radius: 8px;
         padding: 0 15px;
-        margin: 0 15px;
         box-sizing: border-box;
         box-shadow: 0 0 3px black; //rgba(0,0,0,0.5);
         transition: .4s all linear;
@@ -25,12 +29,19 @@
         text-decoration: none !important;
         position: relative;
 
-        &:first-child {
+
+        @include mobile{
+            width: 48%;
+            margin: 0 0 10px;
+            height: 90px;
+        }
+
+        /* &:first-child {
             margin-left: 0;
         }
         &:last-child {
             margin-right: 0;
-        }
+        } */
 
         &-image {
             width: 35px;
@@ -190,6 +201,10 @@
         span {
             text-align: center;
             line-height: 22px;
+        }
+
+        @include mobile{
+            font-size: 15px;
         }
     }
 }
