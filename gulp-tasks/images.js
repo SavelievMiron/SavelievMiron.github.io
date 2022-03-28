@@ -14,12 +14,15 @@ import browsersync from "browser-sync";
 import yargs from "yargs";
 
 const argv = yargs.argv,
-    production = !!argv.production;
+  production = !!argv.production;
 
 gulp.task("images", () => {
-    return gulp.src(paths.images.src)
-        .pipe(newer(paths.images.dist))
-        .pipe(gulpif(production, imagemin([
+  return (
+    gulp
+      .src(paths.images.src)
+      .pipe(newer(paths.images.dist))
+      .pipe(imagemin())
+      /* .pipe(gulpif(production, imagemin([
             imageminGiflossy({
                 optimizationLevel: 3,
                 optimize: 3,
@@ -48,10 +51,13 @@ gulp.task("images", () => {
                     { collapseGroups: true }
                 ]
             })
-        ])))
-        .pipe(gulp.dest(paths.images.dist))
-        .pipe(debug({
-            "title": "Images"
-        }))
-        .pipe(browsersync.stream());
+        ]))) */
+      .pipe(gulp.dest(paths.images.dist))
+      .pipe(
+        debug({
+          title: "Images",
+        })
+      )
+      .pipe(browsersync.stream())
+  );
 });

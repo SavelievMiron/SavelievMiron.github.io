@@ -3,8 +3,17 @@
     .page-content {
         padding: 70px 70px 70px 70px;
 
+        @include netbook{
+            width: 100%;
+            padding: 35px 15px;
+        }
+
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+
+            @include netbook{
+                text-align: center;
+            }
         }
 
         & > div:not(:last-child) {
@@ -23,6 +32,10 @@
                 flex-wrap: wrap;
                 width: 75%;
                 margin: 0 auto;
+
+                @include netbook{
+                    width: 100%;
+                }
     
                 li {
                     display: inline-flex;
@@ -32,6 +45,11 @@
                     margin: 10px;
                     height: 90px;
                     min-width: 160px;
+
+                    @include mobile{
+                        width: 40%;
+                        min-width: 100px;
+                    }
     
                     img {
                         height: 100%;
@@ -49,14 +67,17 @@
                 align-items: center;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                @include laptop{
+                    justify-content: space-evenly;
+                }
             }
         }
     
         &__step {
             display: flex;
-            width: 276px;
-            height: 140px;
-            padding: 10px;
+            width: 100%;
+            min-height: 140px;
+            padding: 15px 10px;
             border-radius: 20px;
             backdrop-filter: blur(10px);
             background: linear-gradient(104.89deg, rgba(128, 128, 128, 0.3), rgba(216, 216, 216, 0.1));
@@ -64,6 +85,16 @@
             &-wrapper {
                 position: relative;
                 z-index: 2;
+                width: 28%;
+
+                @include laptop{
+                    width: 40%;
+                    margin-bottom: 20px;
+                }
+
+                @include mobile{
+                    width: 80%;
+                }
             }
     
             &-number {

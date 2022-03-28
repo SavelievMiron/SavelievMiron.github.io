@@ -1,6 +1,8 @@
 .page-faq {
-
     .page-content {
+        @include laptop {
+            width: 100%;
+        }
         & > h2 {
             text-align: center;
             margin: 35px 0 50px 0;
@@ -17,19 +19,32 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include netbook {
+            flex-wrap: wrap;
+        }
     }
 
     .hot-topic {
         border-radius: 8px;
         margin: 0 5px;
         overflow: hidden;
-        border: 1px solid #EEEEEE;
+        border: 1px solid #eeeeee;
         box-shadow: -7px -20px 22px rgba(35, 51, 107, 0.05);
-        transition: border-color .4s ease;
+        transition: border-color 0.4s ease;
+
+        @include netbook {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
 
         &:hover,
         &.is-active {
-            border-color: #464A58;
+            border-color: #464a58;
         }
 
         &__header {
@@ -46,7 +61,7 @@
             }
 
             span {
-                color: #8C8C8C;
+                color: #8c8c8c;
                 font-size: 12px;
             }
         }
@@ -63,17 +78,25 @@
         &__questions {
             padding: 0 20px;
             margin-bottom: 30px;
-    
+
+            @include mobile{
+                padding: 0;
+            }
+
             &--header {
                 text-align: left;
                 font-size: 28px;
                 font-weight: 900;
-                color:#C5C5C5;
+                color: #c5c5c5;
                 margin-bottom: 25px;
+
+                @include netbook {
+                    text-align: center;
+                }
             }
         }
     }
-    
+
     .no-answers {
         display: flex;
         flex-direction: column;

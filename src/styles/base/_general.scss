@@ -3,13 +3,19 @@ html {
 }
 
 body {
-    font-family: 'Mont', Arial, sans-serif;
+    font-family: "Mont", Arial, sans-serif;
     font-size: 1em;
     font-weight: 400;
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -84,12 +90,12 @@ button {
 .btn-purple {
     color: white;
     backdrop-filter: blur(10px);
-    background: linear-gradient(95.13deg, #5A88FF 4.77%, rgba(217, 67, 255, 0.4) 102.57%);
+    background: linear-gradient(95.13deg, #5a88ff 4.77%, rgba(217, 67, 255, 0.4) 102.57%);
 }
 
 .btn-green {
     color: white;
-    background: linear-gradient(90deg, #59CC87 0%, #779E87 105.09%);
+    background: linear-gradient(90deg, #59cc87 0%, #779e87 105.09%);
     backdrop-filter: blur(10px);
 }
 
@@ -98,7 +104,7 @@ button {
     backdrop-filter: blur(13px);
     transition: 300ms ease;
 
-    &:hover{
+    &:hover {
         box-shadow: none;
     }
 }
@@ -117,7 +123,7 @@ button {
     margin-bottom: auto;
 }
 
-.d-flex { 
+.d-flex {
     display: flex;
 }
 
@@ -156,25 +162,25 @@ button {
     left: 0;
     height: 20px;
     width: 20px;
-    border: 1px solid #CFCFCF;
+    border: 1px solid #cfcfcf;
     border-radius: 2px;
     background-color: transparent;
     padding: 3px;
 }
 
 .custom-checkbox:hover input ~ .checkmark:after {
-    background-color: #CFCFCF;
+    background-color: #cfcfcf;
 }
 
 .custom-checkbox input:checked ~ .checkmark:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Font Awesome 6 Free';
+    font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 14px;
     color: grey;
-    content: "\f00c";    
+    content: "\f00c";
     // background-color: #CFCFCF;
 }
 
@@ -192,23 +198,20 @@ button {
 
 .page-heading {
     font-size: 42px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+
     z-index: -1;
     color: white;
     text-shadow: 1px 0 0 #bebebe, 0 -1px 0 #bebebe, 0 1px 0 #bebebe, -1px 0 0 #bebebe;
     text-align: center;
     width: 100%;
     margin: 40px 0;
-}
 
-@media (max-width: 576px) {
-    .page-heading {
+    @include tablet {
         font-size: 36px;
     }
-}
 
-@media (max-width: 380px) {
-    .page-heading {
+    @include mobile {
         font-size: 28px;
         margin: 40px 0 20px 0;
     }
@@ -240,23 +243,23 @@ button {
         font-weight: 300;
         list-style-type: none;
         padding-left: 20px;
-        position: relative;    /* It's needed for setting position to absolute in the next rule. */
+        position: relative; /* It's needed for setting position to absolute in the next rule. */
     }
-    
+
     li::before {
-        content: '■';
+        content: "■";
         position: absolute;
         top: 0;
-        left: 0;          /* Adjust this value so that it appears where you want. */
-        font-size: 1.1em;      /* Adjust this value so that it appears what size you want. */
+        left: 0; /* Adjust this value so that it appears where you want. */
+        font-size: 1.1em; /* Adjust this value so that it appears what size you want. */
     }
 }
 
 hr.section-break {
     margin: 40px 0;
     border: none;
-    color: #eee; 
-    background-color: #eee; 
+    color: #eee;
+    background-color: #eee;
     height: 1px;
 }
 
@@ -296,20 +299,20 @@ hr.section-break {
             background: transparent;
             font-size: 20px;
             color: grey;
-            transition: all .4s ease;
+            transition: all 0.4s ease;
 
             &:hover {
                 color: black;
             }
 
             &:after {
-                content: '\f06e';
+                content: "\f06e";
                 font-weight: 900;
                 font-family: "Font Awesome 6 Free";
             }
 
             &.is-active:after {
-                content: '\f070';
+                content: "\f070";
             }
         }
     }
