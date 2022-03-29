@@ -1,0 +1,191 @@
+@media (max-width: 1120px) {
+    .page-testimonials {
+        .page-content {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .page-testimonials {
+        hr.section-break {
+            margin: 30px -40px;
+        }
+        .page-content {
+            .testimonials {
+                &__header {
+                    align-items: initial;
+                    flex-direction: column;
+
+                    &-left {
+                        width: 100%;
+                        flex-basis: 100%;
+                        margin-bottom: 5px;
+                    }
+
+                    &-right {
+                        width: 100%;
+                        flex-basis: 100%;
+
+                        h3 {
+                            margin-left: 0;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+
+}
+
+@media (max-width: 860px) {
+
+}
+
+@media (max-width: 768px) {
+    .page-testimonials {
+        .page-content {
+            width: 95%;
+            padding: 30px 20px;
+        }
+        .testimonials {
+            &__header {
+                &-left {
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+                &-right {
+                    h3 {
+                        font-size: 18px;
+                    }
+                    a:not(:last-child) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .testimonial {
+            &__number {
+                min-width: 105px;
+
+                &-shadow {
+                    font-size: 36px;
+                }
+            }
+            &__user {
+                height: 65px;
+                width: 65px;
+                min-width: 65px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .page-testimonials {
+        .testimonials {
+            &__header {
+                &-right {
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    h3 {
+                        display: none;
+                    }
+
+                    a {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+
+                        &:not(:last-child) {
+                            margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .page-testimonials {
+        .page-content {
+            width: 100%;
+        }
+        .testimonials {
+            &__header {
+                &-right {
+                    h3 {
+                        display: none;
+                    }
+                }
+            }
+            &__content {
+                .testimonial {
+                    flex-direction: column;
+
+                    &__number {
+                        flex-direction: row;
+                        align-items: center;
+
+                        span:first-child {
+                            font-size: 28px;
+                            margin-bottom: 0;
+                        }
+
+                        &-shadow {
+                            display: none;
+                        }
+                    }
+
+                    &__user {
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .page-testimonials {
+        .page-content {
+            padding: 20px 10px 20px 10px;
+        }
+        .testimonials {
+            &__header {
+                &-right {
+                    flex-direction: column;
+
+                    a {
+                        width: 100%;
+                        margin: 5px 0 !important;
+                    }
+                }
+            }
+            &__content {
+                .testimonial {
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 460px) {
+    
+}
+
+@media (max-width: 380px) {
+   
+}

@@ -1,0 +1,20 @@
+:root {
+    --primary-bg-color: #464A58;
+    --secondary-bg-color:#3E414A;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #464A58;
+    --shadow-bg-color: rgba(0, 0, 0, 0.25);
+
+    --product-badge-type: linear-gradient(95.13deg, #A8A8A8 4.77%, rgba(190, 190, 190, 0.4) 102.57%);
+    --product-badge-popular: linear-gradient(95.13deg, #5A88FF 4.77%, rgba(217, 67, 255, 0.4) 102.57%);
+    --product-badge-new: linear-gradient(90deg, #59CC87 0%, #779E87 105.09%);
+    --product-badge-hot: linear-gradient(95.77deg, #ff0000 30px, #ED4747 18.03%, rgba(128, 27, 27, 0.35) 100.87%);
+    --product-badge-sale: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
+
+    --discount-bg-color: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
+
+    --quick-puchase-bg-color: linear-gradient(90deg, #59CC87 0%, #779E87 105.09%);
+
+    --original-price-text-color: #464A58;
+    --old-price-text-color: #C4C4C4;
+}

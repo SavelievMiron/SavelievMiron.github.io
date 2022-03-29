@@ -1,0 +1,51 @@
+@media (max-width: 992px) {
+    .page-thank-you {
+
+    }
+}
+
+@media (max-width: 768px) {
+    .page-thank-you {
+
+    }
+}
+
+@media (max-width: 576px) {
+    .page-thank-you {
+
+    }
+}
+
+@media (max-width: 480px) {
+    .page-thank-you {
+        .thank-you {
+            &__heading {
+                font-size: 20px;
+            }
+            &__subheading {
+                font-size: 14px;
+            }
+            &__icon {
+                width: 160px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+   .page-thank-you {
+        .page-content {
+            padding: 30px 10px 20px 10px;
+        }
+        .thank-you {
+            &__links {
+                width: 100%;
+                a {
+                    text-align: center;
+                    padding: 12.5px 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+   }
+}

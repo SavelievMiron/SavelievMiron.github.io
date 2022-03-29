@@ -1,0 +1,19 @@
+.modal--registration {
+    // display: none;
+
+    .modal__container {
+        min-width: 400px;
+
+        .input-field {
+            width: 100%;
+        }
+        
+        .privacy-policy {
+            padding: 20px 0;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
