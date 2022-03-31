@@ -177,19 +177,24 @@
         position: relative;
         width: 100%;
 
-        .page-content{
+        .page-content {
             width: 95%;
         }
 
         &__header {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 30px;
 
             &-left {
                 width: 20%;
                 text-align: left;
+
+                @include netbook {
+                    width: 100%;
+                }
 
                 h3 {
                     font-size: 24px;
@@ -198,6 +203,11 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     margin-bottom: 0;
+
+                    @include netbook {
+                        text-align: center;
+                        margin-bottom: 25px;
+                    }
                 }
             }
 
@@ -207,12 +217,30 @@
                 justify-content: space-between;
                 width: 80%;
 
+                @include netbook {
+                    width: 100%;
+                }
+                @include netbook {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
                 h3 {
                     color: grey;
                     font-size: 24px;
                     font-weight: 800;
                     margin-left: auto;
                     margin-right: 30px;
+
+                    @include netbook {
+                        margin: 0 30px 0 0;
+                    }
+
+                    @include tablet {
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
                 }
 
                 a {
@@ -236,6 +264,9 @@
 
                     &:not(:last-child) {
                         margin-right: 15px;
+                        @include mobile{
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }
@@ -479,10 +510,9 @@
     .heading {
         font-size: 28px;
         margin-bottom: 20px;
-        @include mobile{
+        @include mobile {
             font-size: 20px;
             text-align: center;
         }
     }
-
 }

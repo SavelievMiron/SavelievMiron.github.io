@@ -21,7 +21,7 @@ if (productSlider !== null) {
       0: {
         direction: "horizontal",
       },
-      1200: {
+      992: {
         direction: "vertical",
       },
     },
@@ -33,16 +33,15 @@ if (productSlider !== null) {
       swiper: productSlider2,
     },
     breakpoints: {
-      300: {
+      0: {
         direction: "horizontal",
       },
-      1140: {
+      992: {
         direction: "vertical",
       },
     },
   });
 }
-
 
 /* change product quantity */
 const productQuantity = document.getElementById("quantity"),
@@ -170,13 +169,13 @@ if (productDescription !== null) {
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
-      576: {
+      992: {
         slidesPerView: 4,
       },
-      480: {
+      768: {
         slidesPerView: 3,
       },
-      320: {
+      0: {
         slidesPerView: 2,
       },
     },
