@@ -3,12 +3,24 @@
         @include laptop {
             width: 100%;
         }
-        & > h2 {
-            text-align: center;
-            margin: 35px 0 50px 0;
-        }
 
         padding: 15px;
+    }
+
+    .h-2 {
+        text-align: center;
+        margin: 35px 0 50px 0;
+        font-size: 36px;
+
+        @include netbook {
+            font-size: 30px;
+        }
+
+        @include mobile {
+            font-size: 24px;
+
+            margin: 30px 0;
+        }
     }
 
     hr.section-break {
@@ -17,7 +29,7 @@
 
     .hot-topics {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
 
         @include netbook {
@@ -32,6 +44,8 @@
         border: 1px solid #eeeeee;
         box-shadow: -7px -20px 22px rgba(35, 51, 107, 0.05);
         transition: border-color 0.4s ease;
+
+        width: 24%;
 
         @include netbook {
             width: 48%;
@@ -70,7 +84,11 @@
             font-weight: 300;
             font-size: 14px;
             line-height: 18px;
-            padding: 25px 25px 5px 25px;
+            margin: 25px;
+
+            height: 127px;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 
@@ -79,7 +97,7 @@
             padding: 0 20px;
             margin-bottom: 30px;
 
-            @include mobile{
+            @include mobile {
                 padding: 0;
             }
 

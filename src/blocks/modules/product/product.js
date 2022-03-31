@@ -18,10 +18,10 @@ if (productSlider !== null) {
     },
 
     breakpoints: {
-      300: {
+      0: {
         direction: "horizontal",
       },
-      768: {
+      1200: {
         direction: "vertical",
       },
     },
@@ -32,42 +32,17 @@ if (productSlider !== null) {
     thumbs: {
       swiper: productSlider2,
     },
+    breakpoints: {
+      300: {
+        direction: "horizontal",
+      },
+      1140: {
+        direction: "vertical",
+      },
+    },
   });
 }
 
-const mobileProductSlider = document.querySelector(".mobile-product__slider");
-if (mobileProductSlider !== null) {
-  const mobileProductSlider2 = new Swiper(".mobile-product__slider--2", {
-    direction: "horizontal",
-    spaceBetween: 20,
-    slidesPerView: 3,
-    slideToClickedSlide: true,
-    height: 200,
-    autoplay: {
-      delay: 10000,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      380: {
-        slidesPerView: 3,
-      },
-      320: {
-        slidesPerView: 2,
-      },
-    },
-  });
-  const mobileProductSlider1 = new Swiper(".mobile-product__slider--1", {
-    direction: "horizontal",
-    slidesPerView: 1,
-    centeredSlides: true,
-    thumbs: {
-      swiper: mobileProductSlider2,
-    },
-  });
-}
 
 /* change product quantity */
 const productQuantity = document.getElementById("quantity"),
@@ -131,8 +106,8 @@ if (productTestimonials !== null) {
       type: "bullets",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".product-testimonials__slider .swiper-button-next",
+      prevEl: ".product-testimonials__slider .swiper-button-prev",
     },
     autoplay: {
       delay: 10000,
@@ -140,18 +115,18 @@ if (productTestimonials !== null) {
     grabCursor: true,
     centeredSlides: true,
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 1,
         loopedSlides: 1,
         spaceBetween: 20,
       },
-      480: {
+      756: {
         slidesPerView: 2,
         loopedSlides: 2,
         spaceBetween: 30,
         centeredSlides: false,
       },
-      640: {
+      992: {
         slidesPerView: 3,
         loopedSlides: 3,
         spaceBetween: 45,

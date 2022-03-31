@@ -9,17 +9,35 @@ section#similar-products {
     &__heading {
         color: grey;
         font-size: 28px;
-        font-weight: 700;        
+        font-weight: 700;
         margin-bottom: 60px;
+
+        @include mobile {
+            margin-bottom: 40px;
+        }
     }
 
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .product-card {
-        min-width: 375px;
+        width: 22%;
+        margin-bottom: 30px;
+
+        @include laptop {
+            width: 32%;
+        }
+
+        @include netbook {
+            width: 48%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
     }
 }

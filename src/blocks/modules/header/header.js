@@ -23,9 +23,11 @@ if (typeof header !== "undefined") {
   } */
 
   const mobileMenu = document.querySelector("header .mobile-menu-block"),
+    mobileMenuFooter = document.querySelector("footer .mobile-menu-block"),
     mobileSidebar = document.querySelector("header .mobile-sidebar");
   mobileMenu.onclick = () => {
     mobileMenu.classList.toggle("is-active");
+    mobileMenuFooter.classList.remove("is-active");
     mobileSidebar.classList.toggle("show");
     document.querySelector("body").classList.toggle("lock");
   };

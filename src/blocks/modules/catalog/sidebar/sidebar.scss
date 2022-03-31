@@ -5,13 +5,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 13px 18px rgba(53, 92, 150, 0.2);
     height: 100%;
-    width: 25%;
+    width: 22%;
     margin-right: 25px;
 
     display: flex;
     flex-direction: column;
 
-    @include netbook{
+    @include netbook {
         width: 30%;
     }
 
