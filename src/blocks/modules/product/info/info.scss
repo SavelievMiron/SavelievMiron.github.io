@@ -35,6 +35,7 @@ section#product-info {
 
   &__title {
     font-weight: 700;
+    width: 40%;
 
     @include laptop {
       text-align: center;
@@ -125,7 +126,7 @@ section#product-info {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 26%;
+    width: 29%;
     overflow: hidden;
     height: 50px;
     padding: 0 15px;
@@ -147,15 +148,15 @@ section#product-info {
   }
 
   &__metrics {
+    width: 29%;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 117px);
-    transform: translate(-50%, -50%);
 
     @include laptop {
       display: none;
+    }
+    @include mobile{
+      width: 100%;
     }
 
     i {
@@ -170,8 +171,10 @@ section#product-info {
   }
 
   &__customers {
+    width: 30%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     @include laptop {
       display: none;
     }
@@ -181,7 +184,7 @@ section#product-info {
     display: flex;
     align-items: center;
     height: 100%;
-    width: 45%;
+    width: 40%;
 
     @include laptop {
       width: 50%;
@@ -297,7 +300,7 @@ section#product-info {
 
   &__info {
     height: 100%;
-    width: 55%;
+    width: 60%;
 
     @include laptop {
       width: 45%;

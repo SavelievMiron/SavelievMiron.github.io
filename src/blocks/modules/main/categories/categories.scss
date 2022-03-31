@@ -6,11 +6,9 @@
     width: 100%;
     margin: 50px 0;
 
-    @include mobile{
+    @include mobile {
         margin: 40px 0 20px;
     }
-
-   
 
     &__tab {
         display: flex;
@@ -24,13 +22,12 @@
         padding: 0 15px;
         box-sizing: border-box;
         box-shadow: 0 0 3px black; //rgba(0,0,0,0.5);
-        transition: .4s all linear;
+        transition: 0.4s all linear;
         overflow: hidden;
         text-decoration: none !important;
         position: relative;
 
-
-        @include mobile{
+        @include mobile {
             width: 48%;
             margin: 0 0 10px;
             height: 90px;
@@ -50,7 +47,7 @@
 
         &-image,
         &-image_hover {
-            transition: .4s opacity linear;
+            transition: 0.4s opacity linear;
         }
 
         &-hover {
@@ -71,7 +68,7 @@
                 width: 20%;
                 margin: 0;
                 opacity: 0;
-                transition: .4s opacity linear;
+                transition: 0.4s opacity linear;
             }
 
             h4 {
@@ -88,12 +85,11 @@
 
         &:hover {
             filter: drop-shadow(9px 16px 18px rgba(34, 86, 187, 0.38));
-            backdrop-filter: blur(px);    
+            backdrop-filter: blur(px);
             // box-shadow: 9px 16px 18px rgba(128, 143, 189, 0.38);
         }
 
         &:not(:nth-child(3)):hover {
-
             .categories__tab-image {
                 display: none;
                 opacity: 0;
@@ -122,7 +118,7 @@
 
         &-2 {
             &:after {
-                background: linear-gradient(180deg, #FF8541 0%, rgba(255, 153, 0, 0.51) 100%);
+                background: linear-gradient(180deg, #ff8541 0%, rgba(255, 153, 0, 0.51) 100%);
             }
         }
 
@@ -135,15 +131,20 @@
             }
 
             & > img {
-                margin:0;
+                margin: 0;
             }
 
             &:after {
-                background: linear-gradient(180deg, rgba(34, 86, 187, 0.38) 0%, rgba(34, 86, 187, 0.38) 100%);
-            }     
-            
-            &:hover {
+                background: rgb(242, 193, 177);
+                background: linear-gradient(
+                    138deg,
+                    rgba(242, 193, 177, 1) 0%,
+                    rgba(183, 98, 138, 1) 46%,
+                    rgba(106, 63, 183, 1) 100%
+                );
+            }
 
+            &:hover {
                 & > img,
                 & > h4 {
                     opacity: 0;
@@ -152,7 +153,7 @@
                 .categories__tab-hover {
                     opacity: 1;
                     visibility: visible;
-                    
+
                     img {
                         opacity: 1;
                     }
@@ -162,12 +163,17 @@
 
         &-4 {
             &:after {
-                background: linear-gradient(297.48deg, #32BEA6 3.89%, rgba(50, 190, 166, 0.77) 3.9%, rgba(50, 190, 72, 0.62) 100.05%);
+                background: linear-gradient(
+                    297.48deg,
+                    #32bea6 3.89%,
+                    rgba(50, 190, 166, 0.77) 3.9%,
+                    rgba(50, 190, 72, 0.62) 100.05%
+                );
             }
         }
 
         &:after {
-            content: '';
+            content: "";
             position: absolute;
             top: 0px;
             left: 0px;
@@ -175,7 +181,7 @@
             bottom: 0px;
             opacity: 0;
             z-index: 9;
-            transition: all .4s ease-in-out;
+            transition: all 0.4s ease-in-out;
         }
 
         &:hover {
@@ -203,7 +209,7 @@
             line-height: 22px;
         }
 
-        @include mobile{
+        @include mobile {
             font-size: 15px;
         }
     }

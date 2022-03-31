@@ -563,14 +563,14 @@ header {
 }
 
 .header-fixed {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 99999;
     width: 100%;
 
-    & + main {
+    /* & + main {
         padding-top: 80px;
-    }
+    } */
 }
 
 .lock {
@@ -633,3 +633,40 @@ header {
         }
     }
 }
+
+.header-top {
+    background-color: var(--secondary-bg-color);
+    padding: 10px 0;
+    position: relative;
+    z-index: 9999;
+    color: white;
+    a{
+        color: white;
+    }
+    &__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info {
+    }
+    &__contacts {
+        a{
+            margin-left: 25px;
+            @include mobile{
+                margin-left: 20px;
+                font-size: 20px;
+            }
+        }
+        i{
+            margin-right: 5px;
+        }
+        span{
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+}
+

@@ -30,6 +30,7 @@ if (typeof header !== "undefined") {
     mobileMenuFooter.classList.remove("is-active");
     mobileSidebar.classList.toggle("show");
     document.querySelector("body").classList.toggle("lock");
+    document.querySelector(".header-top").classList.toggle("d-none");
   };
 
   const infoMenu = document.querySelector("header .info-menu .hamburger");
