@@ -30,7 +30,7 @@ if (typeof header !== "undefined") {
     mobileMenuFooter.classList.remove("is-active");
     mobileSidebar.classList.toggle("show");
     document.querySelector("body").classList.toggle("lock");
-    document.querySelector(".header-top").classList.toggle("d-none");
+    /* document.querySelector(".header-top").classList.toggle("d-none"); */
   };
 
   const infoMenu = document.querySelector("header .info-menu .hamburger");
@@ -59,9 +59,11 @@ if (typeof header !== "undefined") {
     if (cartDropdown.classList.contains("hide")) {
       cartDropdown.classList.remove("hide");
       cartIcon.classList.add("toggle-up");
+      /* document.querySelector(".header-top").classList.toggle("d-none"); */
     } else {
       cartDropdown.classList.add("hide");
       cartIcon.classList.remove("toggle-up");
+      /* document.querySelector(".header-top").classList.toggle("d-none"); */
     }
   });
 

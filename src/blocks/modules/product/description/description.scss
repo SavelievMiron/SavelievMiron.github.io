@@ -123,9 +123,7 @@
             margin-top: 40px;
             padding: 0;
 
-            &--1 {
-                margin-bottom: 30px;
-            }
+            
 
             .swiper-slide {
                 overflow: hidden;
@@ -136,6 +134,23 @@
                     width: 100%;
                     object-fit: contain;
                     border-radius: 10px;
+                }
+            }
+
+            &--1 {
+                margin-bottom: 30px;
+
+                .swiper-slide{
+                    height: 350px;
+                }
+            }
+            &--2 {
+                margin-bottom: 30px;
+
+                .swiper-slide{
+                    img{
+                        width: 80%;
+                    }
                 }
             }
         }

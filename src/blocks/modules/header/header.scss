@@ -9,6 +9,7 @@ header {
         padding-top: 15px;
         padding-bottom: 15px;
         position: relative;
+        background-color: #464a58;
         z-index: 5;
         .row {
             height: 100%;
@@ -126,7 +127,7 @@ header {
         }
         &__link {
             color: white;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 300;
             height: 100%;
             width: 100%;
@@ -178,8 +179,8 @@ header {
         height: 100vh;
         width: 100%;
         background-color: var(--primary-bg-color);
-        padding-top: 80px;
-        overflow: hidden;
+        padding-top: 120px;
+        overflow: auto;
         transition: 300ms ease-in-out;
 
         @include netbook {
@@ -249,9 +250,9 @@ header {
             line-height: 15px;
             display: flex;
             align-items: center;
-            padding: 8px 20px;
+            padding: 10px 20px;
             margin-right: 20px;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 300;
 
             @include tablet {
@@ -340,7 +341,7 @@ header {
 
                 @include mobile {
                     position: fixed;
-                    top: 60px;
+                    top: 100px;
                     border-radius: 0;
                     left: 0;
                     width: 100%;
@@ -468,6 +469,7 @@ header {
 }
 
 .language-switcher {
+    
     &-container {
         position: relative;
         box-sizing: border-box;
@@ -494,6 +496,7 @@ header {
         min-width: 110px;
         span {
             min-width: 72px;
+            font-size: 15px;
         }
     }
 
@@ -564,9 +567,15 @@ header {
 
 .header-fixed {
     position: sticky;
-    top: 0;
-    z-index: 99999;
+    top: -1px;
+    z-index: 9999;
     width: 100%;
+
+    @include mobile{
+        position: fixed;
+        top: 39px;
+        width: 100%;
+    }
 
     /* & + main {
         padding-top: 80px;
@@ -636,11 +645,19 @@ header {
 
 .header-top {
     background-color: var(--secondary-bg-color);
-    padding: 10px 0;
+    padding: 8px 0;
     position: relative;
     z-index: 9999;
     color: white;
-    a{
+
+    @include mobile{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    a {
         color: white;
     }
     &__block {
@@ -648,25 +665,25 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 15px;
     }
     &__info {
     }
     &__contacts {
-        a{
+        a {
             margin-left: 25px;
-            @include mobile{
+            @include mobile {
                 margin-left: 20px;
                 font-size: 20px;
             }
         }
-        i{
+        i {
             margin-right: 5px;
         }
-        span{
-            @include mobile{
+        span {
+            @include mobile {
                 display: none;
             }
         }
     }
 }
-

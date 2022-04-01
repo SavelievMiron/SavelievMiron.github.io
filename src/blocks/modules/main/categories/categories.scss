@@ -87,6 +87,10 @@
             filter: drop-shadow(9px 16px 18px rgba(34, 86, 187, 0.38));
             backdrop-filter: blur(px);
             // box-shadow: 9px 16px 18px rgba(128, 143, 189, 0.38);
+
+            @include mobile {
+                filter: none;
+            }
         }
 
         &:not(:nth-child(3)):hover {
@@ -123,7 +127,13 @@
         }
 
         &-3 {
-            justify-content: space-between;
+            justify-content: space-evenly;
+
+            &_plus {
+                font-size: 24px;
+                font-weight: 900;
+                color: #464a58;
+            }
 
             .categories__title {
                 display: flex;

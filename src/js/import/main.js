@@ -9,6 +9,7 @@ import "%modules%/campaign/archive/archive";
 import "%modules%/components/search/search";
 import "%modules%/components/about-banner/about-banner";
 import "%modules%/components/pagination/pagination";
+import "%modules%/components/products-card";
 import "%modules%/footer/footer";
 import "%modules%/modals/authorization/authorization";
 import "%modules%/modals/registration/registration";
