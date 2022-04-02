@@ -28,17 +28,14 @@
 <body>
     @@include("../blocks/modules/header/header.html")
     <main>
-        <div class="page-main">
-            @@include("../blocks/modules/main/slider/slider.html")
-            @@include("../blocks/modules/main/categories/categories.html")
-            @@include("../blocks/modules/main/search/search.html")
-
-            @@include("../blocks/modules/main/top-banner/top-banner.html")
-            
-            @@include("../blocks/modules/main/products/products.html")
-            @@include("../blocks/modules/components/about-banner/about-banner.html")
-            @@include("../blocks/modules/main/testimonials/testimonial-new.html")
-            <!-- @@include("../blocks/modules/main/testimonials/testimonials.html") -->
+        <div class="page-main d-flex flex-column">
+            <div class="order-1">@@include("../blocks/modules/main/slider/slider.html")</div>
+            <div class="order-2">@@include("../blocks/modules/main/categories/categories.html")</div>
+            <div class="order-3">@@include("../blocks/modules/main/search/search.html")</div>
+            <div class="order-7 order-sm-4 mb-5 mb-sm-0">@@include("../blocks/modules/main/top-banner/top-banner.html")</div>
+            <div class="order-5">@@include("../blocks/modules/main/products/products.html")</div>
+            <div class="order-6">@@include("../blocks/modules/components/about-banner/about-banner.html")</div>
+            <div class="order-7">@@include("../blocks/modules/main/testimonials/testimonial-new.html")</div>
         </div>
     </main>
     @@include("../blocks/modules/footer/footer.html")

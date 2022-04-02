@@ -22,3 +22,11 @@
         }
     }
 }
+
+#search{
+    .search-form{
+        @include mobile{
+            margin-bottom: 0;
+        }
+    }
+}

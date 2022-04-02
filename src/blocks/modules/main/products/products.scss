@@ -1,5 +1,9 @@
 section#products {
     margin: 70px 0;
+
+    @include mobile{
+        margin: 0 0 50px;
+    }
 }
 
 .products-grid {

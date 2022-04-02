@@ -61,6 +61,7 @@
                 justify-content: center;
                 align-items: center;
                 border-bottom: 1px solid #555a6b;
+                display: none;
             }
         }
 
@@ -84,6 +85,10 @@
 
                 i {
                     margin-right: 10px;
+                }
+
+                &:first-child{
+                    display: none;
                 }
             }
 
@@ -116,6 +121,7 @@
         @include mobile {
             width: 100%;
             margin-bottom: 0;
+            
         }
     }
 

@@ -99,7 +99,6 @@ if (productTestimonials !== null) {
 
   const swiper = new Swiper(".product-testimonials__slider", {
     loop: true,
-    speed: 800,
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
@@ -107,9 +106,6 @@ if (productTestimonials !== null) {
     navigation: {
       nextEl: ".product-testimonials__slider .swiper-button-next",
       prevEl: ".product-testimonials__slider .swiper-button-prev",
-    },
-    autoplay: {
-      delay: 10000,
     },
     grabCursor: true,
     centeredSlides: true,

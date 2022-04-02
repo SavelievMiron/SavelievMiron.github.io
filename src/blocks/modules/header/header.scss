@@ -341,7 +341,7 @@ header {
 
                 @include mobile {
                     position: fixed;
-                    top: 100px;
+                    top: 99px;
                     border-radius: 0;
                     left: 0;
                     width: 100%;
@@ -685,5 +685,11 @@ header {
                 display: none;
             }
         }
+    }
+}
+
+main{
+    @include mobile{
+        margin-top: 130px;
     }
 }
