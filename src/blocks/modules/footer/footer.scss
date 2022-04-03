@@ -21,8 +21,14 @@
         &_block {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-items: center;
+
+            @include laptop{
+                flex-wrap: wrap;
+            }
+
+
         }
 
         @include mobile {
@@ -35,7 +41,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @include laptop{
+        @include laptop {
             justify-content: space-around;
         }
     }
@@ -45,14 +51,15 @@
 
         .logo {
             display: block;
+            margin-bottom: 18px;
 
             &__text {
                 font-size: 18px;
                 font-weight: 900;
 
-                @include mobile {
+                /* @include mobile {
                     margin-right: 15px;
-                }
+                } */
             }
 
             @include mobile {
@@ -61,7 +68,6 @@
                 justify-content: center;
                 align-items: center;
                 border-bottom: 1px solid #555a6b;
-                display: none;
             }
         }
 
@@ -87,7 +93,7 @@
                     margin-right: 10px;
                 }
 
-                &:first-child{
+                &:first-child {
                     display: none;
                 }
             }
@@ -108,7 +114,7 @@
             }
         }
 
-        @include laptop{
+        @include laptop {
             width: 24%;
             margin-bottom: 40px;
         }
@@ -121,7 +127,6 @@
         @include mobile {
             width: 100%;
             margin-bottom: 0;
-            
         }
     }
 
@@ -143,7 +148,7 @@
             }
         }
 
-        @include laptop{
+        @include laptop {
             width: 32%;
             margin-bottom: 40px;
         }
@@ -161,20 +166,33 @@
 
     &__payment {
         width: 24%;
+        display: flex;
+        flex-direction: column;
 
         .payment-methods {
             display: flex;
             flex-wrap: wrap;
-            margin: 0 -5px;
+
+            margin: 0 -5px 10px;
+
+            @include mobile {
+                justify-content: center;
+            }
 
             &__item {
                 display: inline-flex;
                 height: 43px;
-                width: 65px;
-                border-radius: 10px;
+                min-width: 65px;
+                max-width: 65px;
+                border-radius: 8px;
                 background-color: white;
                 margin: 5px 5px 10px;
                 overflow: hidden;
+
+                @include mobile {
+                    min-width: 75px;
+                    max-width: 75px;
+                }
 
                 img {
                     width: 100%;
@@ -184,7 +202,7 @@
             }
         }
 
-        @include laptop{
+        @include laptop {
             width: 32%;
             margin-bottom: 40px;
         }
@@ -211,7 +229,7 @@
     &__rating {
         width: 24%;
 
-        @include laptop{
+        @include laptop {
             width: 32%;
         }
 
@@ -223,12 +241,20 @@
             width: 100%;
             text-align: center;
             padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
     .social-info {
         display: flex;
         align-items: center;
+
+        @include laptop{
+            width: 100%;
+        }
+        
         @include mobile {
             width: 100%;
             justify-content: center;
@@ -250,6 +276,12 @@
         justify-content: flex-end;
         padding: 0;
         font-size: 14px;
+
+        @include laptop{
+            margin-top: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
 
         a:not(:last-child) {
             margin-right: 25px;
@@ -274,7 +306,8 @@
         font-size: 18px;
         font-weight: 700;
         color: white;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        width: 100%;
     }
 
     .rating-box {
@@ -287,6 +320,12 @@
         border-radius: 15px;
         text-decoration: none !important;
 
+        @include mobile {
+            width: 48%;
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+
         &:hover {
             background-color: rgba(45, 45, 45, 0.5);
         }
@@ -294,12 +333,23 @@
         &__icon {
             height: 100%;
             margin-right: 15px;
+            @include mobile {
+                display: flex;
+                align-items: center;
+                margin: 0 5px 3px;
+            }
 
             img {
                 height: 100%;
                 width: 100%;
                 min-width: 40px;
                 object-fit: contain;
+
+                @include mobile {
+                    width: 19px;
+                    min-width: 19px;
+                    height: 19px;
+                }
             }
         }
 
@@ -322,12 +372,19 @@
         &__title {
             font-size: 18px;
             font-weight: 300;
+
+            @include mobile {
+                font-size: 9px;
+            }
         }
 
         &__subtitle {
             font-size: 14px;
             font-weight: 700;
             white-space: nowrap;
+            @include mobile {
+                display: none;
+            }
         }
 
         &__score {
@@ -342,6 +399,10 @@
                 border-radius: 10px;
                 padding: 5px 10px;
             }
+
+            @include mobile {
+                flex-wrap: nowrap;
+            }
         }
 
         &__yandex {
@@ -350,6 +411,12 @@
                 background-color: red;
                 border-radius: 10px;
                 padding: 5px 10px;
+
+                @include mobile {
+                    font-size: 9px;
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                }
             }
         }
 
@@ -359,6 +426,11 @@
             height: 15px;
             margin: 2.5px 2.5px;
             background: url("/img/svg/trustpilot_icon.svg") no-repeat center / cover;
+
+            @include mobile {
+                width: 11px;
+                height: 11px;
+            }
         }
 
         &:not(:last-child) {
@@ -370,6 +442,10 @@
         display: flex;
         align-items: center;
         margin: 0 10px;
+
+        @include laptop{
+            margin: 0;
+        }
 
         @include mobile {
             justify-content: center;
@@ -405,11 +481,21 @@
         font-weight: 500;
     }
 
-    .mobile-menu{
+    .mobile-menu {
         display: none;
 
-        @include mobile{
-            display: block;
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .btn-all-reviews {
+        text-align: center;
+        @include mobile {
+            width: 100%;
+            background-color: #5b5f6f;
+            border-radius: 4px;
+            padding: 10px 5px;
         }
     }
 }

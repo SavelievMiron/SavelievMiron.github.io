@@ -23,10 +23,8 @@
     }
 }
 
-#search{
-    .search-form{
-        @include mobile{
-            margin-bottom: 0;
-        }
+#search {
+    .search-form {
+        margin-bottom: 0;
     }
 }

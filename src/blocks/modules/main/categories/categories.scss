@@ -6,6 +6,10 @@
     width: 100%;
     margin: 50px 0;
 
+    @include tablet{
+        margin: 40px 0 20px;
+    }
+
     @include mobile {
         margin: 40px 0 20px;
     }
@@ -27,10 +31,17 @@
         text-decoration: none !important;
         position: relative;
 
-        @include mobile {
+        @include netbook {
             width: 48%;
+            border: 2px solid black;
             margin: 0 0 10px;
             height: 90px;
+            height: 75px;
+            border-radius: 3px;
+            box-shadow: none;
+        }
+        @include mobile{
+            height: 55px;
         }
 
         /* &:first-child {
@@ -133,6 +144,9 @@
                 font-size: 24px;
                 font-weight: 900;
                 color: #464a58;
+                @include mobile{
+                    display: none;
+                }
             }
 
             .categories__title {
@@ -141,7 +155,7 @@
             }
 
             & > img {
-                margin: 0;
+                margin: 0 5px;
             }
 
             &:after {
@@ -216,11 +230,15 @@
 
         span {
             text-align: center;
-            line-height: 22px;
+            line-height: 1.2;
+            @include mobile{
+                line-height: 0.9;
+            }
         }
 
         @include mobile {
             font-size: 15px;
+            margin-left: 5px;
         }
     }
 }

@@ -4,28 +4,35 @@ const productSlider = document.querySelector(".product__slider");
 if (productSlider !== null) {
   Swiper.use([Navigation, Thumbs]);
 
-  const productSlider2 = new Swiper(".product__slider--2", {
-    direction: "vertical",
-    spaceBetween: 20,
-    slidesPerView: 3,
-    slideToClickedSlide: true,
-    autoplay: {
-      delay: 10000,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  const productSlider2 = new Swiper(
+    ".product__slider--2__wrapper .product__slider--2",
+    {
+      direction: "vertical",
+      spaceBetween: 20,
+      slidesPerView: 3,
+      slideToClickedSlide: true,
+      autoplay: {
+        delay: 10000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".product__slider--2__wrapper .swiper-pagination",
+        clickable: true,
+      },
 
-    breakpoints: {
-      0: {
-        direction: "horizontal",
+      breakpoints: {
+        0: {
+          direction: "horizontal",
+        },
+        992: {
+          direction: "vertical",
+        },
       },
-      992: {
-        direction: "vertical",
-      },
-    },
-  });
+    }
+  );
   const productSlider1 = new Swiper(".product__slider--1", {
     direction: "vertical",
     slidesPerView: 1,
@@ -100,7 +107,7 @@ if (productTestimonials !== null) {
   const swiper = new Swiper(".product-testimonials__slider", {
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".product-testimonials .swiper-pagination",
       type: "bullets",
     },
     navigation: {
@@ -175,6 +182,9 @@ if (productDescription !== null) {
         slidesPerView: 2,
       },
     },
+    pagination: {
+      el: ".description__slider .swiper-pagination",
+    },
   });
   var descSlider1 = new Swiper(".description__slider--1", {
     spaceBetween: 10,
@@ -183,3 +193,16 @@ if (productDescription !== null) {
     },
   });
 }
+
+
+new Swiper(".similar-reviews-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".similar-reviews-slider .swiper-pagination",
+  },
+});

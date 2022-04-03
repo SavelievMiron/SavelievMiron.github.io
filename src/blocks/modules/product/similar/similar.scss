@@ -6,6 +6,11 @@ section#similar-products {
     width: 100%;
     margin-bottom: 40px;
 
+    @include mobile {
+        border-top: 1px solid #eee;
+        padding-top: 40px;
+    }
+
     &__heading {
         color: grey;
         font-size: 28px;
@@ -14,6 +19,7 @@ section#similar-products {
 
         @include mobile {
             margin-bottom: 40px;
+            text-align: center;
         }
     }
 
@@ -38,6 +44,85 @@ section#similar-products {
 
         @include mobile {
             width: 48%;
+        }
+    }
+}
+
+.similar-reviews {
+    width: 100%;
+    margin-bottom: 60px;
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+
+    h3 {
+        color: grey;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .similar-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 40px;
+
+        &__user {
+            width: 67px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            &-photo {
+                width: 67px;
+                height: 67px;
+                border-radius: 50%;
+            }
+
+            &-like {
+                width: 22px;
+                height: 22px;
+                position: absolute;
+                bottom: 0;
+                left: -5px;
+            }
+        }
+
+        &__name {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            h4 {
+                font-weight: 900;
+                font-size: 20px;
+            }
+        }
+
+        &__number {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            color: black;
+            -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+            /* -webkit-text-stroke-color: rgba(0, 0, 0, 0.08); */
+        }
+
+        &__text {
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 15px;
+            height: 110px;
+            overflow: hidden;
+        }
+
+        h4 {
+            color: #c4c4c4;
         }
     }
 }

@@ -60,6 +60,7 @@
         padding: 15px 0 0px 40px;
         @include netbook {
             padding: 30px 30px 30px 15px;
+            height: 140px;
         }
 
         &-title {
