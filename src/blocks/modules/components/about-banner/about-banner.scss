@@ -1,8 +1,5 @@
 .about-banner {
     position: relative;
-    @include mobile{
-        display: none;
-    }
     .swiper-slide {
         width: 100% !important;
 

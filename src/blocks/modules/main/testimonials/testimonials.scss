@@ -1,11 +1,5 @@
-
-
 .page-testimonials {
     margin-top: 80px;
-
-    @include mobile{
-        display: none;
-    }
 
     .page-content {
         padding: 40px 80px;
@@ -13,12 +7,21 @@
         @include tablet {
             padding: 20px;
         }
+
+        @include mobile {
+            padding: 40px 20px;
+        }
+    }
+
+    @include mobile {
+        margin-top: 60px;
+        margin-bottom: 30px;
     }
 
     .testimonials__header {
         margin-bottom: 70px;
 
-        @include netbook{
+        @include netbook {
             margin-bottom: 40px;
         }
     }
@@ -27,12 +30,13 @@
         border-radius: 130px 130px 0 0;
         margin-bottom: 0;
 
-        @include netbook{
+        @include netbook {
             border-radius: 50px 50px 0 0;
         }
 
         @include mobile {
             border-radius: 10px 10px 0 0;
+            display: none;
         }
     }
 
@@ -56,3 +60,5 @@
         }
     }
 }
+
+

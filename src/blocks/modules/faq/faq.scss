@@ -25,6 +25,10 @@
 
     hr.section-break {
         margin: 60px -15px;
+
+        @include mobile{
+            margin: 30px -15px;
+        }
     }
 
     .hot-topics {
@@ -35,6 +39,8 @@
         @include netbook {
             flex-wrap: wrap;
         }
+
+        
     }
 
     .hot-topic {
@@ -54,6 +60,12 @@
 
         @include tablet {
             width: 100%;
+        }
+
+        @include mobile{
+            &:nth-child(3), &:nth-child(4){
+                display: none;
+            }
         }
 
         &:hover,
@@ -110,6 +122,7 @@
 
                 @include netbook {
                     text-align: center;
+                    color: #464a58;
                 }
             }
         }

@@ -57,9 +57,9 @@
                 font-size: 18px;
                 font-weight: 900;
 
-                /* @include mobile {
+                @include mobile {
                     margin-right: 15px;
-                } */
+                }
             }
 
             @include mobile {
@@ -84,17 +84,21 @@
             &__item {
                 white-space: nowrap;
                 margin: 15px 0;
+                font-weight: 500;
+                color: #AEAEAE;
 
                 a {
                     text-decoration: none;
+                    color: #AEAEAE;
                 }
 
                 i {
                     margin-right: 10px;
+                    color: white;
                 }
 
-                &:first-child {
-                    display: none;
+                span{
+                    color: white;
                 }
             }
 
@@ -485,7 +489,7 @@
         display: none;
 
         @include mobile {
-            display: none;
+            display: block;
         }
     }
 

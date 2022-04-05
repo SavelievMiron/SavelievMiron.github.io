@@ -26,15 +26,18 @@
             margin-bottom: 20px;
     
             ul {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
                 flex-wrap: wrap;
-                width: 75%;
+                width: 100%;
                 margin: 0 auto;
 
-                @include netbook{
-                    width: 100%;
+                @include laptop{
+                    grid-template-columns: repeat(4, 1fr);
+                }
+
+                @include mobile{
+                    grid-template-columns: repeat(3, 1fr);
                 }
     
                 li {
@@ -43,18 +46,18 @@
                     border-radius: 13px;
                     overflow: hidden;
                     margin: 10px;
-                    height: 90px;
-                    min-width: 160px;
+                    height: 95px;
+                    min-width: 120px;
 
                     @include mobile{
-                        width: 40%;
-                        min-width: 100px;
+                        min-width: 50px;
+                        height: 75px;
                     }
     
                     img {
                         height: 100%;
                         width: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                 }
             }

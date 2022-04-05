@@ -107,6 +107,13 @@ button {
     &:hover {
         box-shadow: none;
     }
+
+    @include mobile {
+        width: 100%;
+        text-align: center;
+        border-radius: 3px;
+        font-weight: 800;
+    }
 }
 
 .btn-outline {
@@ -315,5 +322,19 @@ hr.section-break {
                 content: "\f070";
             }
         }
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    margin: 2px !important;
+    background-color: #c4c4c4 !important;
+    opacity: 1 !important;
+
+    &-active {
+        border-radius: 4px !important;
+        width: 12px !important;
+        background-color: #464a58 !important;
     }
 }

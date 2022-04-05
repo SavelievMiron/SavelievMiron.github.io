@@ -6,13 +6,12 @@
     filter: drop-shadow(1px 13px 18px rgba(53, 92, 150, 0.06));
     transition: 0.3s all ease;
 
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
 
-    @include mobile{
+    @include mobile {
         overflow: hidden;
     }
 
@@ -255,7 +254,7 @@
 
                 @include mobile {
                     background: url("/img/svg/add-to-cart-white.svg") no-repeat left 45% center / 20px,
-                        linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+                        linear-gradient(to right, #464A58, #464A58);
                 }
             }
 
@@ -291,6 +290,7 @@
                 display: none !important;
             }
         }
+
         &-mobile {
             display: none !important;
             @include mobile {
@@ -307,15 +307,15 @@
             display: none;
             flex-direction: column;
             justify-content: center;
-            padding: 8px;
             font-size: 14px;
 
-            a{
-                margin: 4px 0;
+            a {
+                padding: 5px 8px;
             }
 
-            &-1{
+            &-1 {
                 font-weight: 800;
+                border-bottom: 1px solid #adadad;
             }
         }
     }

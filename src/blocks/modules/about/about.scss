@@ -26,7 +26,7 @@
 
         ul.square-list {
             margin-left: 25px;
-            li{
+            li {
                 line-height: 1.4;
             }
 
@@ -36,7 +36,7 @@
         }
 
         &__partners {
-            width: 85%;
+            width: 100%;
             margin: 40px auto;
 
             h2 {
@@ -55,6 +55,10 @@
                     border-radius: 8px;
                     overflow: hidden;
                     margin: 10px 15px;
+                    @include mobile {
+                        width: 27%;
+                        margin: 10px;
+                    }
 
                     img {
                         width: 100%;
