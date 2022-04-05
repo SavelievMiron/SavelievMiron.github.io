@@ -164,6 +164,13 @@ if (productDescription !== null) {
     });
   }
 
+  if ($(window).width() < 576) {
+    $(".product-desc__tab, .product-desc__tab-content").removeClass(
+      "is-active"
+    );
+    $(".mobile-tab").addClass("is-active");
+  }
+
   Swiper.use([Navigation, Thumbs]);
 
   var descSlider2 = new Swiper(".description__slider--2", {
@@ -193,7 +200,6 @@ if (productDescription !== null) {
     },
   });
 }
-
 
 new Swiper(".similar-reviews-slider", {
   slidesPerView: 1,

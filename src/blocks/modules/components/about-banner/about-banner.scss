@@ -4,9 +4,11 @@
         width: 100% !important;
 
         img {
-            width: 100%;
-            height: 100%;
+            height: 240px;
             object-fit: cover;
+            @include netbook {
+                height: 140px;
+            }
         }
     }
 
@@ -20,7 +22,7 @@
         justify-content: flex-end;
         padding: 0 50px;
 
-        @include netbook{
+        @include netbook {
             bottom: -20px;
             justify-content: center;
         }
@@ -37,7 +39,7 @@
         background: #e5e6e8;
         opacity: 1;
 
-        @include netbook{
+        @include netbook {
             width: 30px;
             height: 30px;
         }
@@ -45,7 +47,7 @@
 
     .swiper-nav-btn::after {
         font-size: 16px;
-        @include netbook{
+        @include netbook {
             font-size: 14px;
         }
     }
@@ -54,10 +56,13 @@
 .about-banner {
     &__item {
         background: #464a58;
-        padding: 15px 0 0px 40px;
+        padding: 15px 0 15px 15px;
         @include netbook {
-            padding: 30px 30px 30px 15px;
             height: 140px;
+            padding: 0;
+        }
+        @include mobile{
+            padding: 30px;
         }
 
         &-title {
@@ -88,7 +93,7 @@
             line-height: 1;
             margin-top: 20px;
 
-            @include laptop{
+            @include laptop {
                 font-size: 60px;
             }
 
@@ -101,17 +106,21 @@
             }
         }
         &-img {
-            @include netbook{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @include mobile {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 right: 0;
                 opacity: 0.2;
+                display: block;
             }
         }
     }
 }
 
-.position-relative{
+.position-relative {
     position: relative;
 }
